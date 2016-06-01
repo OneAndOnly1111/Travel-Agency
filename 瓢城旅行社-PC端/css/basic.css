@@ -1,0 +1,105 @@
+@charset "utf-8";
+body,h1,h2,h3,ul,ol,p,figure{
+	margin: 0 ;
+	padding: 0;
+}
+ul,ol{
+	list-style: outside none none;
+}
+a{
+	text-decoration: none;
+}
+.none{
+	display: none;    /* 为了网站布局的规范性 加上网站导航四个字 但是让其隐藏不可见*/
+}
+/*头部*/
+#header{
+	width: 100%;
+	min-width: 1263px;
+	height:70px;
+	background-color: #333;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);  /*设置阴影*/
+	position: relative;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	z-index: 999;   /*设置堆叠顺序 拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面*/
+} 
+#header .center{
+	width:1263px;
+	height:70px;
+    margin:0 auto;
+}
+#header .logo{
+	width:240px;
+	height:70px;
+	background-image:  url(../img/logo1.png);
+	text-indent: -9999px;   /*使用首行文本缩进让瓢城旅行社5个字隐藏*/
+	float: left;
+}
+#header .link{
+	float: right;
+	width: 650px;
+	height: 70px; 
+	line-height: 70px;    /*设置li垂直居中（让一整行垂直居中）[垂直居中只需让行高与高度相同就行了]*/
+    color:#eee;     /*设置文本颜色为淡灰色*/
+}
+#header .link li{
+	float: left;
+	width:120px;   /*设置每个li的宽度为120px*/
+	text-align: center;   /*设置li水平居中*/
+}
+#header .link a{
+	color: #eee;
+	display: block;  /*  a是内联元素 加上display: block;后变成区块 延伸成和li一样的大小*/
+}
+#header .link a:hover, 
+#header .active a{
+	background-color: #000;
+}
+/*尾部*/
+#footer{
+	height: 320px;
+	background-color: #222;
+	clear: both;
+	position: relative;
+	top: 20px;
+}
+#footer .top{
+	width: 1263px;
+	height: 281px;
+	/*background-color: red;*/
+	margin: 0 auto;
+	text-align: center;
+}
+#footer .block{
+	width: 410px;
+	height: 280px;
+	display: inline-block;
+	text-align: left;
+	color: #ccc;
+	vertical-align: top; /*垂直居顶*/
+}
+#footer h2{
+	font-size: 24px;
+	font-weight: normal;
+	padding: 20px 0 0 20px;
+}
+#footer hr{
+	width: 90%;
+	border:1px dashed #333;
+}
+#footer ul{
+	font-size: 18px;
+	color: #777;
+	text-indent: 20px;
+	line-height: 2;	
+}
+#footer .bottom{
+	height: 80px;
+	line-height: 80px;
+	background-color: #000;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #444;
+}
+
+
