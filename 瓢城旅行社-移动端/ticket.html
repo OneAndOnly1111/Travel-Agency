@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum=1.0,user-scalable=no">
+	<title>移动端固定布局</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- 头部 -->
+<header id="header">
+		
+			<nav class="link">
+			    <h2 class="none">网站导航</h2>
+				<ul>
+				   <li><a href="index.html">首页</a></li>
+				   <li><a href ="information.html">资讯</a></li>
+				   <li  class="active"><a href ="ticket.html">票务</a></li>
+			       <li><a href ="about.html">关于</a></li>
+				</ul>
+			</nav>	
+</header> 
+
+<div id="headline">
+	<img src="img/headline.jpg">
+	<hgroup>
+		<h2>票务</h2>
+        <h3>介绍各种最新旅游信息、新闻要闻、景点攻略等</h3>
+    </hgroup>
+</div>
+
+<div class="list ticket">
+	   <!-- form表单显示出返回城市及时间 -->
+	   <form action="###">
+	   	<h2>机票预订</h2>
+	   	<div class="type">
+	   		<p>航班类型 <mark>单程</mark> 往返</p>
+	   	</div>
+	   	<div class="form">
+	   	    <p>
+				<label for  ="from_city">出发城市</label>
+				<input type ="text" name="from_city" id="from_city" placeholder="城市名">
+	   		</p>
+	   		<p>
+				<label for  ="to_city">返回城市</label>
+				<input type ="text" name="from_city" id="to_city" placeholder="城市名">
+	   		</p>
+	   	</div>
+	   	<div class="form">
+	   	    <p>
+				<label for  ="from_date">出发时间</label>
+				<input type ="text" name="from_city" id="from_date" placeholder="时间/日期">
+	   		</p>
+	   		<p>
+				<label for  ="to_date">返回城市</label>
+				<input type ="text" name="返回时间" id="to_date" placeholder="时间/日期">
+	   		</p>
+	   		
+	   	</div>
+	   	<div class="form">
+	   	    <p>
+	   	    	<button class="submit" type="submit">订票</button>
+	   	    </p>
+	   	</div>
+	   </form>
+	   <!-- 显示最新机票信息 -->
+	   <div class="new">
+	   	<h2>最新机票</h2> 
+	   	<ul>
+	   		<li>热门城市：</li>
+	   		<li>北京</li>
+	   		<li>杭州</li>
+	   		<li>南京</li>
+	   		<li>上海</li>
+	   		<li>武汉</li>
+	   		<li>长沙</li>
+	   		<li>深圳</li>
+	   	</ul>
+	   	<table>
+	   		<thead> <!-- 表格的头 用来存放标题表头之类的 -->
+	   			<tr>
+	   				<th>路线</th> <!-- th元素定义表头 -->
+	   				<th>日期</th>
+	   				<th>价格</th>
+	   				<th class="min">税费</th>
+	   				<th class="min">餐食</th>
+	   				<th>航班</th>
+	   				<th>预订</th>
+	   			</tr>
+	   		</thead> 
+	   		<tbody><!-- 表格的身体 用来存放数据本体 -->
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		    <tr>
+	   		    	<td>北京-成都</td>
+	   		    	<td>10-15</td>
+	   		    	<td class="price">￥745</td>
+	   		    	<td class="min">￥50</td>
+	   		    	<td class="min">有</td>
+	   		    	<td>春秋航空</td>
+	   		    	<td><a href="###" class="reserve">预订</a></td>
+	   		    </tr>
+	   		</tbody>
+	   		<tfoot><!-- 表格的脚 放表格的脚注之类 -->
+	   		   <tr>
+	   		   	<td colspan="7"><a href="###" class="more">加载更多航班...</a></td>
+	   		   </tr>
+	   		</tfoot>
+	   	</table>
+</div>
+
+<!-- 底部区域 -->
+<footer id="footer">
+	<div class="top">
+		客户端|触屏版|电脑版
+	</div>
+   <div class="bottom">Copyright ©：YCUK瓢城旅行社 | 赣ICP 备1180号</div>
+</footer>
+</body>
+</html>
